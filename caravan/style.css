@@ -2,24 +2,35 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #6c6b6b;
 }
 
-.header {
-  width: 100%;
-  height: 120px;
-  background-color: red;
+a {
+  text-decoration: none; /*a要素の下線の表示を無くす*/
 }
 
-.header-top {
-  width: 100%;
-  height: 70px;
-  background-color: hotpink;
+header {
+  width: 90%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.header-bottom {
-  width: 100%;
-  height: 50px;
-  background-color: pink;
+/*headerタグ内のheadingクラスにのみ適用される書き方*/
+header .heading {
+  font-size: 32px;
+}
+
+.nav-list {
+  text-align: center;  /*テキストを中央揃えにしたい場合にはtext-alignを使用する*/
+  padding: 10px 0;
+  margin: 0 auto;
+}
+
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
 }
 
 .main-visual {
@@ -36,7 +47,7 @@
 
 .main {
   width: 840px;
-  display: flex; /* Flexboxの利用。横並びや上下左右の入れ替えなどを行える『レイアウトモード』のようなもの。適用したい要素の親要素に記述する */
+  display: flex; /* Flexboxの利用。横並びや上下左右の入れ替えなどを行える『レイアウトモード』のようなもの。適用したい要素の親要素に記述する。ブロックレベル要素に使う */
   justify-content: center; /* 子要素の横並び・中央寄せ */
   margin: 0 auto;
   /*widthとheightのデフォルトはautoなので指定しなければ子要素に合わせられる。*/
@@ -54,8 +65,14 @@
   background-color: palegreen;
 }
 
-.footer {
+footer {
   width: 100%;
   height: 120px;
-  background-color: blue;
+  text-align: center; /*テキストを中央に揃える*/
+  line-height: 120px; /*heightの高さと同じ値にすることで上下の中央揃えを指定できる*/
+  background-color: #848282;
+}
+
+.footer-text {
+  color: #fff;
 }
