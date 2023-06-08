@@ -229,3 +229,71 @@ footer {
 .footer-text {
   color: #fff;
 }
+
+/*メディアクエリの適用（画面サイズが４２５px以下で下記cssが適用される）*/
+@media screen and (max-width: 425px) {
+
+  header {
+  width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  position: relative; /*sosialの基準位置を相対位置へ変更する*/
+  }
+
+  .nav-list {
+  text-align: center;  /*テキストを中央揃えにしたい場合にはtext-alignを使用する*/
+  padding: 10px 0;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  }
+
+  .nav-list-item {
+  list-style: none;
+  margin: 0 auto;
+  padding: 10px 0;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+ .blog {
+  width: 100%;
+  margin-right: 30px;
+  padding: 0 10px;
+  }
+
+  .blog-image {
+  height: 180px;
+  width: 170px;
+  }
+
+  .sidebar {
+  width: 100%;
+  margin-top: 40px;
+  }
+  
+  .sidebar-contents {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .instagram-box {
+  width: 48%;
+  padding-top: 48%;
+  background-size: cover;
+  background-position: center;
+  }
+  
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+
+  .pagination {
+    margin-bottom: 50px;
+  }
+
+}

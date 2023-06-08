@@ -2,6 +2,7 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <script src="https://kit.fontawesome.com/497b62484c.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css" />
     <title>CARAVAN</title>
@@ -50,6 +51,7 @@
       <section class="blog"><!--section要素はページや記事の一部分を表す要素。divと使い分け（子要素に文章等を作成する場合はsectionタグを使う）。章や節と同じ意味合い。要素内には必ず見出し（h要素）が必要-->
         <h2 class="blog-heading">Recent blogs</h2>
         <div class="blog-box"></div>
+        
           <div class="blog-item">
             <img class="blog-image" src="img/forest.jpg"><!--src属性は画像などを外部から取り込む際に使う。属性値にファイルのパスを指定することでその場所へ表示させる-->
             <section class="blog-text">
@@ -122,6 +124,7 @@
             </section>
           </div>
         </div>
+        
         <div class="pagination">
           <p><<</p>
           <p><</p>
@@ -132,7 +135,8 @@
           <p>>></p>
         </div>
       </section>
-
+      
+      <!--サイドバー-->
       <div class="sidebar">
         <section class="popular">
           <h2 class="popular-heading common-heading">Popular</h2>
