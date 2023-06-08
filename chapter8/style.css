@@ -18,7 +18,7 @@ main {
   padding: 20px;
 }
 
-/*oddは奇数だけの指定。下記の場合は奇数番のlistの背景色を変更*/
+/*oddは奇数だけの指定。下記の場合は奇数番のlistの背景色を変更する*/
 .list:nth-child(odd) {
   background-color: #848282;
 }
