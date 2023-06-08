@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.main-top {
+  margin: 50px 0;
+}
+
+.list {
+  list-style: none;
+  padding: 20px;
+}
+
+/*oddは奇数だけの指定。下記の場合は奇数番のlistの背景色を変更*/
+.list:nth-child(odd) {
+  background-color: #848282;
+}
+
+.main-bottom {
+  margin-bottom: 50px;
+}
+
+.lists {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-list {
+  width: 30%;
+  height: 200px;
+  background-color: #ff0;
+  list-style: none; /*デフォルトで表示される・を無くすため*/
+  margin-right: 5%;
+  margin-bottom: 40px;
+}
+
+/*１、５、９のboxだけ背景色を変更するため*/
+.box-list:nth-child(1),
+.box-list:nth-child(5),
+.box-list:nth-child(9) {
+  background-color: orange;
+}
+
+
+/*３の倍数だけmargin-rightを０に設定する*/
+.box-list:nth-child(3n) {
+  margin-right: 0;
+}
+
+.box-list:nth-child(n+7):nth-child(-n+9) {
+  margin-bottom: 0;
+}
+
+/*
+.box-list:nth-last-child(-n+3){
+  margin-bottom: 0;
+}
+上の記述でも７〜９番目のBOXだけmargin-bottom 0を指定できる
+-n はカウントダウンのようなもの。この場合（-n+3）なので最後のboxlist（９、８、７）の３つだけ適用するというもの
+*/
