@@ -43,3 +43,135 @@ header {
 .nav-list a {
   color: #fff;
 }
+
+.main-visual {
+  height: 650px;
+  width: 100%;
+  text-align: center;
+  background-image: url(img/mv.png);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.main-visual-title {
+  font-size: 64px;
+  font-family: 'Raleway', sans-serif;
+  padding-top: 200px;
+}
+
+.main-visual-text {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.portfolio {
+  background-color: #eceef1;
+  text-align: center;
+}
+
+.title {
+  font-size: 32px;
+  padding-top: 90px;
+  color: #000;
+}
+
+.title::after { /*選択した要素の最後に子要素として擬似要素を生成する。今回はh２内にオレンジの棒線を追加。*/
+  content: "";
+  display: block;/*afterはインライン要素なのでdisplay: blosk;でブロック要素に変更している。*/
+  width: 70px;
+  height: 3px;
+  margin: 8px auto 0 auto;
+  background-color: #ec725f;
+}
+
+.portfolio-text {
+  padding: 30px 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.img-list {
+  width: 920px;
+  display: flex;/*編集モードの指定。縦並びや横並びの表示を容易にする。flex指定した要素をflexコンテナー、コンテナー内の要素をflexアイテムとする*/
+  flex-wrap: wrap; /*flexアイテムがflexコンテナーの表示領域を超える場合の折り返し表示の指定。*/
+  margin: 0 auto;
+  padding-bottom: 90px;
+}
+
+.img-box {
+  height: 250px;
+  width: 300px;
+  margin-right: 10px;
+  background-size: cover; /*imgの表示領域を指定*/
+  background-position: center; /*imgの表示位置を指定*/
+}
+
+.img-box:nth-child(1) {
+  background-image: url(img/sketch.jpg);
+  margin-bottom: 10px;
+}
+
+.img-box:nth-child(2) {
+  background-image: url(img/websuku.png);
+  margin-bottom: 10px;
+}
+
+.img-box:nth-child(3) {
+  background-image: url(img/write.jpg);
+  margin-bottom: 10px;
+  margin-right: 0;
+}
+
+.img-box:nth-child(4) {
+  background-image: url(img/webcamp.png);
+}
+
+.img-box:nth-child(5) {
+  background-image: url(img/talk.jpg);
+}
+
+.img-box:nth-child(6) {
+  background-image: url(img/webcamp-mother.png);
+  margin-right: 0;
+}
+
+.feature {
+  width: 980;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.feature-text {
+  padding: 30px 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.feature-box > i {
+  font-size: 60px;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: center;
+}
+
+.feature-box {
+  width: 320px;
+  margin-right: 10px;
+}
+
+.feature-box:nth-child(3) {
+  margin-right: 0;
+}
+
+.feature-box-title {
+  font-size: 20px;
+  color: #000;
+  padding: 10px 0;
+}
+
+.feature-list-text {
+  text-align: start;
+}
