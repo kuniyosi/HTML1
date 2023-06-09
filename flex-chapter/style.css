@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100%;
+  background-color: #FF33FF;
+  padding: 30px 20px;
+  display: flex; /*編集モード。flexと指定した要素をflexコンテナー、コンテナー内の要素はflex-itemとなる*/
+  justify-content: flex-start; /*水平方向のポジション調整。左寄せで横並びになる*/
+}
+
+header > div {
+  height: 70px;
+  flex-basis: 140px; /*widthでも横幅の指定はできるがflex-basisの場合、要素が縦並びに変更された場合は縦の高さに自動で変更してくれる*/
+  background-color: #FFCCFF;
+  margin: 0 10px;
+}
+
+header > div:first-child {
+  margin-right: auto;
+}
+
+main {
+  display: flex;
+  justify-content: center; /*水平方向の位置の指定。今回は真ん中に表示できる*/
+}
+
+.left-side {
+  width: 300px;
+  background-color: #CCFF99;
+}
+
+.right-side {
+  max-width: 700px; /*最大横幅範囲を７００pxで指定*/
+  flex-grow: 1; /*flexアイテムで指定できるプロパティ。横幅の伸縮比率を指定できる。flexコンテナーに余白がある場合flex-growが指定されているアイテムが横幅余白を埋めるように伸びる*/
+  padding: 20px;
+  background-color: #00CC00;
+  display: flex;
+  flex-wrap: wrap; /*flexアイテムの合計値がflexコンテナーの横幅を超過する場合の折り返しの方法を指定する*/
+  justify-content: center;
+}
+
+.box {
+  flex-basis: 200px;
+  height: 130px;
+  margin: 10px;
+  background-color: #FFFF66;
+}
+
+footer {
+  width: 100%;
+  background-color: #6699FF;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-box {
+  margin: 10px;
+  height: 40px;
+  flex-basis: 45%;
+  max-width: 600px;
+  background-color: #CCFFFF;
+}
+
