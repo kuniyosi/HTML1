@@ -67,13 +67,13 @@ header {
 
 .portfolio {
   background-color: #eceef1;
-  text-align: center;
 }
 
 .title {
   font-size: 32px;
   padding-top: 90px;
   color: #000;
+  text-align: center;
 }
 
 .title::after { /*選択した要素の最後に子要素として擬似要素を生成する。今回はh２内にオレンジの棒線を追加。*/
@@ -89,6 +89,7 @@ header {
   padding: 30px 0;
   font-size: 16px;
   color: #000;
+  text-align: center;
 }
 
 .img-list {
@@ -174,4 +175,51 @@ header {
 
 .feature-list-text {
   text-align: start;
+}
+
+.profile {
+  background-color: #eceef1;
+  text-align: center;
+  padding-bottom: 90px;
+}
+
+.profile-text {
+  padding: 30px 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.profile-main {
+  display: flex;
+}
+
+.profile-main-left {
+  width: 50%;
+}
+
+.profile-img {
+  background-image: url(img/my-icon.jpg);
+  border-radius: 50%;/*要素に丸みを持たせるプロパティ。今回はimgに丸みを持たせている*/
+  margin: 0 auto;
+  width: 250px;
+  height: 250px;
+}
+
+.profile-main-right {
+  width: 50%;
+}
+
+.profile-main-text {
+  text-align: start;
+  color: #000;
+}
+
+.myname {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.myskills {
+  font-size: 20px;
+  padding: 20px 0 5px 0;
 }
