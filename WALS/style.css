@@ -223,3 +223,74 @@ header {
   font-size: 20px;
   padding: 20px 0 5px 0;
 }
+
+.contact {
+  padding-bottom: 90px;
+  text-align: center;
+}
+
+.contact-main {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.contact-text {
+  padding: 30px 0;
+  font-size: 16px;
+  color: #000;
+}
+
+.contact-bottom {
+  display: flex;
+  padding-top: 30px;
+}
+
+.contact-bottom-left {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.bottom-left {
+  width: 130px;
+  margin: 0 auto;
+  text-align: start;
+}
+
+.mail-title {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.mail {
+  padding-bottom: 20px;
+}
+
+.tel-title {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.contact-bottom-right {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.bottom-right {
+  width: 170px;
+  margin: 0 auto;
+  text-align: start;
+}
+
+.sns-title {
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.bottom-right > i {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.fa-brands:nth-child(2) {
+  margin-right: 0;
+}
